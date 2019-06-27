@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="Daily Food Log">
+  <meta name="author" content="Shruthi Kondin">
+  <meta name="keywords" content="calorie, food">
+
+  <title>Daily Food Log</title>
+</head>
+
+<body>
+  <header>
+<!-- add a side tab for calendar, sign in -->
+  </header>
+  <main>
+
+    <h1 style="text-align:center;"> Log Food Intake : </h1>
+    <br/>
+    
+    <form>
+      Enter food item:<br>
+      <input type="text" name="fooditem"><br>
+
+    </form>
+
+
+
+  </main>
+  <footer>
+
+
+
+
+  </footer>
+</body>
+</html>
