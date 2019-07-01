@@ -10,6 +10,10 @@
 
 <body>
   <header>
+    <!-- Google calender
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23D81B60&amp;ctz=America%2FChicago&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%230B8043" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  -->
+
 <!-- add a side tab for calendar, sign in -->
   </header>
   <main>
@@ -17,12 +21,12 @@
     <h1 style="text-align:center;"> Log Food Intake : </h1>
     <br/>
 
-    <form id="form1" style="text-align:center;">
-      <label for="entering food">Enter food item:</label><br>
-      <input name="fooditem" id="entering food" list="food names"><br>
+    <form id="common food" style="text-align:center;">
+      <label for="entering common food">Enter food item:</label><br>
+      <input name="common food item" id="entering common food" list="common food names"><br>
     </form>
 
-    <datalist id="food names">
+    <datalist id="common food names">
       <option>apple</option>
       <option>grape</option>
       <option>watermelon</option>
@@ -34,22 +38,28 @@
       <option>blueberry</option>
     </datalist>
 
-    <!-- add an option where people can add custommized food items that they regularily eat -->
+    <div style="text-align: center;">
+      <button onclick="foodname()">Enter</button>
+    </div>
 
-    <button onclick="foodname()" style="text-align:center;">Enter</button>
+    <p style="font-size:30px;text-align:center;">Or</p>
+
+    <div style="text-align: center;">
+      <button onclick="window.location.href= 'customfood.html' ">Enter customized food</button>
+    </div>
 
     <script>
 
       function foodname() {
         var x, y;
-        x=document.getElementById("form1");
-        y=x.elements["fooditem"].value;
-        document.getElementById("demo").innerHTML=("food is:" + y);
+        x=document.getElementById("common food");
+        y=x.elements["common food item"].value;
+        document.getElementById("display food").innerHTML=("food is:" + y);
       }
 
     </script>
 
-    <p id="demo"></p>
+    <p id="display food"></p>
   </main>
   <footer>
 
